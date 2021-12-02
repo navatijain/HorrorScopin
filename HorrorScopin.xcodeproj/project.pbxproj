@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEC27598A9800DC5869 /* AppDelegate.swift */; };
+		935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEE27598A9800DC5869 /* SceneDelegate.swift */; };
+		935F4DF127598A9800DC5869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DF027598A9800DC5869 /* ViewController.swift */; };
+		935F4DF427598A9800DC5869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF227598A9800DC5869 /* Main.storyboard */; };
+		935F4DF627598A9A00DC5869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF527598A9A00DC5869 /* Assets.xcassets */; };
+		935F4DF927598A9A00DC5869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */; };
+		935F4E0427598A9A00DC5869 /* HorrorScopinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0327598A9A00DC5869 /* HorrorScopinTests.swift */; };
+		935F4E0E27598A9A00DC5869 /* HorrorScopinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */; };
+		935F4E1027598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		935F4E0027598A9A00DC5869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935F4DE127598A9800DC5869 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935F4DE827598A9800DC5869;
+			remoteInfo = HorrorScopin;
+		};
+		935F4E0A27598A9A00DC5869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935F4DE127598A9800DC5869 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935F4DE827598A9800DC5869;
+			remoteInfo = HorrorScopin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		935F4DE927598A9800DC5869 /* HorrorScopin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorrorScopin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F4DEC27598A9800DC5869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		935F4DEE27598A9800DC5869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		935F4DF027598A9800DC5869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935F4DF327598A9800DC5869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		935F4DF527598A9A00DC5869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		935F4DF827598A9A00DC5869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		935F4DFA27598A9A00DC5869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935F4DFF27598A9A00DC5869 /* HorrorScopinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorrorScopinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F4E0327598A9A00DC5869 /* HorrorScopinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinTests.swift; sourceTree = "<group>"; };
+		935F4E0927598A9A00DC5869 /* HorrorScopinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorrorScopinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITests.swift; sourceTree = "<group>"; };
+		935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		935F4DE627598A9800DC5869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4DFC27598A9A00DC5869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4E0627598A9A00DC5869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		935F4DE027598A9800DC5869 = {
+			isa = PBXGroup;
+			children = (
+				935F4DEB27598A9800DC5869 /* HorrorScopin */,
+				935F4E0227598A9A00DC5869 /* HorrorScopinTests */,
+				935F4E0C27598A9A00DC5869 /* HorrorScopinUITests */,
+				935F4DEA27598A9800DC5869 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		935F4DEA27598A9800DC5869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				935F4DE927598A9800DC5869 /* HorrorScopin.app */,
+				935F4DFF27598A9A00DC5869 /* HorrorScopinTests.xctest */,
+				935F4E0927598A9A00DC5869 /* HorrorScopinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		935F4DEB27598A9800DC5869 /* HorrorScopin */ = {
+			isa = PBXGroup;
+			children = (
+				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
+				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
+				935F4DF027598A9800DC5869 /* ViewController.swift */,
+				935F4DF227598A9800DC5869 /* Main.storyboard */,
+				935F4DF527598A9A00DC5869 /* Assets.xcassets */,
+				935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */,
+				935F4DFA27598A9A00DC5869 /* Info.plist */,
+			);
+			path = HorrorScopin;
+			sourceTree = "<group>";
+		};
+		935F4E0227598A9A00DC5869 /* HorrorScopinTests */ = {
+			isa = PBXGroup;
+			children = (
+				935F4E0327598A9A00DC5869 /* HorrorScopinTests.swift */,
+			);
+			path = HorrorScopinTests;
+			sourceTree = "<group>";
+		};
+		935F4E0C27598A9A00DC5869 /* HorrorScopinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */,
+				935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */,
+			);
+			path = HorrorScopinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		935F4DE827598A9800DC5869 /* HorrorScopin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935F4E1327598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopin" */;
+			buildPhases = (
+				935F4DE527598A9800DC5869 /* Sources */,
+				935F4DE627598A9800DC5869 /* Frameworks */,
+				935F4DE727598A9800DC5869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HorrorScopin;
+			productName = HorrorScopin;
+			productReference = 935F4DE927598A9800DC5869 /* HorrorScopin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		935F4DFE27598A9A00DC5869 /* HorrorScopinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935F4E1627598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinTests" */;
+			buildPhases = (
+				935F4DFB27598A9A00DC5869 /* Sources */,
+				935F4DFC27598A9A00DC5869 /* Frameworks */,
+				935F4DFD27598A9A00DC5869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935F4E0127598A9A00DC5869 /* PBXTargetDependency */,
+			);
+			name = HorrorScopinTests;
+			productName = HorrorScopinTests;
+			productReference = 935F4DFF27598A9A00DC5869 /* HorrorScopinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		935F4E0827598A9A00DC5869 /* HorrorScopinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935F4E1927598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinUITests" */;
+			buildPhases = (
+				935F4E0527598A9A00DC5869 /* Sources */,
+				935F4E0627598A9A00DC5869 /* Frameworks */,
+				935F4E0727598A9A00DC5869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935F4E0B27598A9A00DC5869 /* PBXTargetDependency */,
+			);
+			name = HorrorScopinUITests;
+			productName = HorrorScopinUITests;
+			productReference = 935F4E0927598A9A00DC5869 /* HorrorScopinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		935F4DE127598A9800DC5869 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					935F4DE827598A9800DC5869 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					935F4DFE27598A9A00DC5869 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 935F4DE827598A9800DC5869;
+					};
+					935F4E0827598A9A00DC5869 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 935F4DE827598A9800DC5869;
+					};
+				};
+			};
+			buildConfigurationList = 935F4DE427598A9800DC5869 /* Build configuration list for PBXProject "HorrorScopin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 935F4DE027598A9800DC5869;
+			productRefGroup = 935F4DEA27598A9800DC5869 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				935F4DE827598A9800DC5869 /* HorrorScopin */,
+				935F4DFE27598A9A00DC5869 /* HorrorScopinTests */,
+				935F4E0827598A9A00DC5869 /* HorrorScopinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		935F4DE727598A9800DC5869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F4DF927598A9A00DC5869 /* LaunchScreen.storyboard in Resources */,
+				935F4DF627598A9A00DC5869 /* Assets.xcassets in Resources */,
+				935F4DF427598A9800DC5869 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4DFD27598A9A00DC5869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4E0727598A9A00DC5869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		935F4DE527598A9800DC5869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F4DF127598A9800DC5869 /* ViewController.swift in Sources */,
+				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
+				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4DFB27598A9A00DC5869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F4E0427598A9A00DC5869 /* HorrorScopinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935F4E0527598A9A00DC5869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935F4E1027598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift in Sources */,
+				935F4E0E27598A9A00DC5869 /* HorrorScopinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		935F4E0127598A9A00DC5869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935F4DE827598A9800DC5869 /* HorrorScopin */;
+			targetProxy = 935F4E0027598A9A00DC5869 /* PBXContainerItemProxy */;
+		};
+		935F4E0B27598A9A00DC5869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935F4DE827598A9800DC5869 /* HorrorScopin */;
+			targetProxy = 935F4E0A27598A9A00DC5869 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		935F4DF227598A9800DC5869 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				935F4DF327598A9800DC5869 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				935F4DF827598A9A00DC5869 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		935F4E1127598A9A00DC5869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		935F4E1227598A9A00DC5869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		935F4E1427598A9A00DC5869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HorrorScopin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		935F4E1527598A9A00DC5869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HorrorScopin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		935F4E1727598A9A00DC5869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorrorScopin.app/HorrorScopin";
+			};
+			name = Debug;
+		};
+		935F4E1827598A9A00DC5869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorrorScopin.app/HorrorScopin";
+			};
+			name = Release;
+		};
+		935F4E1A27598A9A00DC5869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HorrorScopin;
+			};
+			name = Debug;
+		};
+		935F4E1B27598A9A00DC5869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navbarstudio.HorrorScopinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HorrorScopin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		935F4DE427598A9800DC5869 /* Build configuration list for PBXProject "HorrorScopin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F4E1127598A9A00DC5869 /* Debug */,
+				935F4E1227598A9A00DC5869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935F4E1327598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F4E1427598A9A00DC5869 /* Debug */,
+				935F4E1527598A9A00DC5869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935F4E1627598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F4E1727598A9A00DC5869 /* Debug */,
+				935F4E1827598A9A00DC5869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935F4E1927598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935F4E1A27598A9A00DC5869 /* Debug */,
+				935F4E1B27598A9A00DC5869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 935F4DE127598A9800DC5869 /* Project object */;
+}
