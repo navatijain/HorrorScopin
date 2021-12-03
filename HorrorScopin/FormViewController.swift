@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FormViewController: UIViewController {
     
     //MARK: UI
     lazy var sunSignPicker: UIPickerView = {
@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         return stackView
     }()
     
+    let formViewModel = FormViewModel()
+    
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UIPickerViewDataSource {
+extension FormViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
@@ -54,22 +56,23 @@ extension ViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView {
         case sunSignPicker:
-            return SunSigns.allCases.count
+           // return SunSigns.allCases.count
+            return formViewModel.sunSignPickerData.count
         case dayPicker:
-            return Days.allCases.count
+            return formViewModel.daysPickerData.count
         default:
             return 0
         }
     }
 }
 
-extension ViewController: UIPickerViewDelegate{
+extension FormViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView {
         case sunSignPicker:
-            return SunSigns.allCases[row].rawValue.capitalized
+            return formViewModel.sunSignPickerData[row].rawValue.capitalized
         case dayPicker:
-            return Days.allCases[row].rawValue.capitalized
+            return formViewModel.daysPickerData[row].rawValue.capitalized
         default:
             return nil
         }

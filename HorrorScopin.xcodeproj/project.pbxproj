@@ -10,7 +10,7 @@
 		0EFB445D1884B086A670D35A /* Pods_HorrorScopin_HorrorScopinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */; };
 		935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEC27598A9800DC5869 /* AppDelegate.swift */; };
 		935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEE27598A9800DC5869 /* SceneDelegate.swift */; };
-		935F4DF127598A9800DC5869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DF027598A9800DC5869 /* ViewController.swift */; };
+		935F4DF127598A9800DC5869 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DF027598A9800DC5869 /* FormViewController.swift */; };
 		935F4DF627598A9A00DC5869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF527598A9A00DC5869 /* Assets.xcassets */; };
 		935F4DF927598A9A00DC5869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */; };
 		935F4E0427598A9A00DC5869 /* HorrorScopinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0327598A9A00DC5869 /* HorrorScopinTests.swift */; };
@@ -19,6 +19,7 @@
 		935F4E1D2759A16500DC5869 /* SunSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E1C2759A16500DC5869 /* SunSigns.swift */; };
 		93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */; };
 		93AFD0E1275ABF4800042E25 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E0275ABF4800042E25 /* Days.swift */; };
+		93AFD0E3275AC81A00042E25 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E2275AC81A00042E25 /* FormViewModel.swift */; };
 		DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */; };
 		EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +49,7 @@
 		935F4DE927598A9800DC5869 /* HorrorScopin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorrorScopin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F4DEC27598A9800DC5869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935F4DEE27598A9800DC5869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		935F4DF027598A9800DC5869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935F4DF027598A9800DC5869 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		935F4DF527598A9A00DC5869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935F4DF827598A9A00DC5869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F4DFA27598A9A00DC5869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		935F4E1C2759A16500DC5869 /* SunSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSigns.swift; sourceTree = "<group>"; };
 		93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		93AFD0E0275ABF4800042E25 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		93AFD0E2275AC81A00042E25 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin_HorrorScopinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +134,8 @@
 			children = (
 				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
 				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
-				935F4DF027598A9800DC5869 /* ViewController.swift */,
+				935F4DF027598A9800DC5869 /* FormViewController.swift */,
+				93AFD0E2275AC81A00042E25 /* FormViewModel.swift */,
 				93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */,
 				935F4E1C2759A16500DC5869 /* SunSigns.swift */,
 				93AFD0E0275ABF4800042E25 /* Days.swift */,
@@ -411,10 +414,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F4DF127598A9800DC5869 /* ViewController.swift in Sources */,
+				935F4DF127598A9800DC5869 /* FormViewController.swift in Sources */,
 				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
 				93AFD0E1275ABF4800042E25 /* Days.swift in Sources */,
 				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
+				93AFD0E3275AC81A00042E25 /* FormViewModel.swift in Sources */,
 				93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */,
 				935F4E1D2759A16500DC5869 /* SunSigns.swift in Sources */,
 			);
