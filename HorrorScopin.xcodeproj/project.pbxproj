@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EFB445D1884B086A670D35A /* Pods_HorrorScopin_HorrorScopinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */; };
 		935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEC27598A9800DC5869 /* AppDelegate.swift */; };
 		935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DEE27598A9800DC5869 /* SceneDelegate.swift */; };
 		935F4DF127598A9800DC5869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4DF027598A9800DC5869 /* ViewController.swift */; };
-		935F4DF427598A9800DC5869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF227598A9800DC5869 /* Main.storyboard */; };
 		935F4DF627598A9A00DC5869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF527598A9A00DC5869 /* Assets.xcassets */; };
 		935F4DF927598A9A00DC5869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */; };
 		935F4E0427598A9A00DC5869 /* HorrorScopinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0327598A9A00DC5869 /* HorrorScopinTests.swift */; };
 		935F4E0E27598A9A00DC5869 /* HorrorScopinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */; };
 		935F4E1027598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */; };
+		DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */; };
+		EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAF7203F4ACF35B8EBE8B75 /* Pods-HorrorScopinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopinTests.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopinTests/Pods-HorrorScopinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44E5E8D29FEAE4D45D39FA64 /* Pods-HorrorScopin-HorrorScopinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin-HorrorScopinUITests.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin-HorrorScopinUITests/Pods-HorrorScopin-HorrorScopinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D65A6A785DB949A436BAF2D /* Pods-HorrorScopin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.release.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.release.xcconfig"; sourceTree = "<group>"; };
+		8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F4DE927598A9800DC5869 /* HorrorScopin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorrorScopin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F4DEC27598A9800DC5869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935F4DEE27598A9800DC5869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		935F4DF027598A9800DC5869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		935F4DF327598A9800DC5869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		935F4DF527598A9A00DC5869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935F4DF827598A9A00DC5869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F4DFA27598A9A00DC5869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		935F4E0927598A9A00DC5869 /* HorrorScopinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorrorScopinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITests.swift; sourceTree = "<group>"; };
 		935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.debug.xcconfig"; sourceTree = "<group>"; };
+		B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin_HorrorScopinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63A9FE4363AAFAB438108C4 /* Pods-HorrorScopinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopinTests.release.xcconfig"; path = "Target Support Files/Pods-HorrorScopinTests/Pods-HorrorScopinTests.release.xcconfig"; sourceTree = "<group>"; };
+		F515BD7EBDF12175543BA131 /* Pods-HorrorScopin-HorrorScopinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin-HorrorScopinUITests.release.xcconfig"; path = "Target Support Files/Pods-HorrorScopin-HorrorScopinUITests/Pods-HorrorScopin-HorrorScopinUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFB445D1884B086A670D35A /* Pods_HorrorScopin_HorrorScopinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9055B71CD321EFC582529B2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */,
+				B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */,
+				9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		935F4DE027598A9800DC5869 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				935F4E0227598A9A00DC5869 /* HorrorScopinTests */,
 				935F4E0C27598A9A00DC5869 /* HorrorScopinUITests */,
 				935F4DEA27598A9800DC5869 /* Products */,
+				9AE66A4C6DCDAFF39B90C1A4 /* Pods */,
+				9055B71CD321EFC582529B2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +127,6 @@
 				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
 				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
 				935F4DF027598A9800DC5869 /* ViewController.swift */,
-				935F4DF227598A9800DC5869 /* Main.storyboard */,
 				935F4DF527598A9A00DC5869 /* Assets.xcassets */,
 				935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */,
 				935F4DFA27598A9A00DC5869 /* Info.plist */,
@@ -127,6 +151,19 @@
 			path = HorrorScopinUITests;
 			sourceTree = "<group>";
 		};
+		9AE66A4C6DCDAFF39B90C1A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */,
+				6D65A6A785DB949A436BAF2D /* Pods-HorrorScopin.release.xcconfig */,
+				44E5E8D29FEAE4D45D39FA64 /* Pods-HorrorScopin-HorrorScopinUITests.debug.xcconfig */,
+				F515BD7EBDF12175543BA131 /* Pods-HorrorScopin-HorrorScopinUITests.release.xcconfig */,
+				0AAF7203F4ACF35B8EBE8B75 /* Pods-HorrorScopinTests.debug.xcconfig */,
+				C63A9FE4363AAFAB438108C4 /* Pods-HorrorScopinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F4E1327598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopin" */;
 			buildPhases = (
+				6E6E811325F7A4674A18CF11 /* [CP] Check Pods Manifest.lock */,
 				935F4DE527598A9800DC5869 /* Sources */,
 				935F4DE627598A9800DC5869 /* Frameworks */,
 				935F4DE727598A9800DC5869 /* Resources */,
+				6D861E14D18D775438199A98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F4E1627598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinTests" */;
 			buildPhases = (
+				1446DDA3484EA342F326E5CB /* [CP] Check Pods Manifest.lock */,
 				935F4DFB27598A9A00DC5869 /* Sources */,
 				935F4DFC27598A9A00DC5869 /* Frameworks */,
 				935F4DFD27598A9A00DC5869 /* Resources */,
@@ -169,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F4E1927598A9A00DC5869 /* Build configuration list for PBXNativeTarget "HorrorScopinUITests" */;
 			buildPhases = (
+				5830D409410D3A2C1D42B761 /* [CP] Check Pods Manifest.lock */,
 				935F4E0527598A9A00DC5869 /* Sources */,
 				935F4E0627598A9A00DC5869 /* Frameworks */,
 				935F4E0727598A9A00DC5869 /* Resources */,
+				971A9E6088B2E41E4827B3C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +275,6 @@
 			files = (
 				935F4DF927598A9A00DC5869 /* LaunchScreen.storyboard in Resources */,
 				935F4DF627598A9A00DC5869 /* Assets.xcassets in Resources */,
-				935F4DF427598A9800DC5869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +293,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1446DDA3484EA342F326E5CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HorrorScopinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5830D409410D3A2C1D42B761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HorrorScopin-HorrorScopinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D861E14D18D775438199A98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E6E811325F7A4674A18CF11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HorrorScopin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		971A9E6088B2E41E4827B3C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin-HorrorScopinUITests/Pods-HorrorScopin-HorrorScopinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin-HorrorScopinUITests/Pods-HorrorScopin-HorrorScopinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HorrorScopin-HorrorScopinUITests/Pods-HorrorScopin-HorrorScopinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		935F4DE527598A9800DC5869 /* Sources */ = {
@@ -297,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		935F4DF227598A9800DC5869 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				935F4DF327598A9800DC5869 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +570,7 @@
 		};
 		935F4E1427598A9A00DC5869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +599,7 @@
 		};
 		935F4E1527598A9A00DC5869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D65A6A785DB949A436BAF2D /* Pods-HorrorScopin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +628,7 @@
 		};
 		935F4E1727598A9A00DC5869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAF7203F4ACF35B8EBE8B75 /* Pods-HorrorScopinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +654,7 @@
 		};
 		935F4E1827598A9A00DC5869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63A9FE4363AAFAB438108C4 /* Pods-HorrorScopinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +680,7 @@
 		};
 		935F4E1A27598A9A00DC5869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E5E8D29FEAE4D45D39FA64 /* Pods-HorrorScopin-HorrorScopinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +704,7 @@
 		};
 		935F4E1B27598A9A00DC5869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F515BD7EBDF12175543BA131 /* Pods-HorrorScopin-HorrorScopinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

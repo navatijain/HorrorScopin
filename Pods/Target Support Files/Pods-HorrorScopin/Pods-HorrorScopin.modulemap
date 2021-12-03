@@ -1,0 +1,6 @@
+framework module Pods_HorrorScopin {
+  umbrella header "Pods-HorrorScopin-umbrella.h"
+
+  export *
+  module * { export * }
+}

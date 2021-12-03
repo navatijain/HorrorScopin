@@ -1,0 +1,6 @@
+framework module Pods_HorrorScopin_HorrorScopinUITests {
+  umbrella header "Pods-HorrorScopin-HorrorScopinUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
