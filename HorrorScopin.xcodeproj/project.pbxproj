@@ -17,6 +17,8 @@
 		935F4E0E27598A9A00DC5869 /* HorrorScopinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */; };
 		935F4E1027598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */; };
 		935F4E1D2759A16500DC5869 /* SunSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E1C2759A16500DC5869 /* SunSigns.swift */; };
+		93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */; };
+		93AFD0E1275ABF4800042E25 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E0275ABF4800042E25 /* Days.swift */; };
 		DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */; };
 		EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITests.swift; sourceTree = "<group>"; };
 		935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		935F4E1C2759A16500DC5869 /* SunSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSigns.swift; sourceTree = "<group>"; };
+		93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		93AFD0E0275ABF4800042E25 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin_HorrorScopinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +133,9 @@
 				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
 				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
 				935F4DF027598A9800DC5869 /* ViewController.swift */,
+				93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */,
 				935F4E1C2759A16500DC5869 /* SunSigns.swift */,
+				93AFD0E0275ABF4800042E25 /* Days.swift */,
 				935F4DF527598A9A00DC5869 /* Assets.xcassets */,
 				935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */,
 				935F4DFA27598A9A00DC5869 /* Info.plist */,
@@ -407,7 +413,9 @@
 			files = (
 				935F4DF127598A9800DC5869 /* ViewController.swift in Sources */,
 				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
+				93AFD0E1275ABF4800042E25 /* Days.swift in Sources */,
 				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
+				93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */,
 				935F4E1D2759A16500DC5869 /* SunSigns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

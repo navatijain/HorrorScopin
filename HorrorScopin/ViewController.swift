@@ -14,13 +14,30 @@ class ViewController: UIViewController {
         let sunSignPicker = UIPickerView()
         sunSignPicker.dataSource = self
         sunSignPicker.delegate = self
-        sunSignPicker.translatesAutoresizingMaskIntoConstraints = false
         return sunSignPicker
+    }()
+    
+    lazy var dayPicker: UIPickerView = {
+        let sunSignPicker = UIPickerView()
+        sunSignPicker.dataSource = self
+        sunSignPicker.delegate = self
+        return sunSignPicker
+    }()
+    
+    lazy var containerView: UIView = {
+        let containerView = UIView()
+        containerView.backgroundColor = .black
+        return containerView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(sunSignPicker)
+        setSunSignPicker()
+        view.backgroundColor = .white
+    }
+    
+    private func setSunSignPicker(){
+        view.addSubviewWithAutoLayout(sunSignPicker)
         sunSignPicker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         sunSignPicker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         sunSignPicker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -33,13 +50,28 @@ extension ViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        SunSigns.allCases.count
+        switch pickerView {
+        case sunSignPicker:
+            return SunSigns.allCases.count
+        case dayPicker:
+            return Days.allCases.count
+        default:
+            return 0
+        }
     }
 }
 
 extension ViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        SunSigns.allCases[row].rawValue.capitalized
+        switch pickerView {
+        case sunSignPicker:
+            return SunSigns.allCases[row].rawValue.capitalized
+        case dayPicker:
+           return SunSigns.allCases[row].rawValue.capitalized
+        default:
+            return nil
+        }
+       
     }
 }
 
