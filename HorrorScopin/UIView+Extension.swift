@@ -22,4 +22,13 @@ extension UIView {
             addSubview($0.enableAutoLayout)
         }
     }
+    
+    func anchor(to superView: UIView, with inset:UIEdgeInsets = .zero) -> [NSLayoutConstraint] {
+        [
+            leftAnchor.constraint(equalTo: superView.leftAnchor, constant: inset.left),
+            rightAnchor.constraint(equalTo: superView.rightAnchor, constant: inset.right),
+            topAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.topAnchor, constant: inset.top),
+            bottomAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.bottomAnchor, constant: inset.bottom)
+        ]
+    }
 }

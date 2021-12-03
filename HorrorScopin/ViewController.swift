@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    /* UI */
+    //MARK: UI
     lazy var sunSignPicker: UIPickerView = {
         let sunSignPicker = UIPickerView()
         sunSignPicker.dataSource = self
@@ -24,12 +24,15 @@ class ViewController: UIViewController {
         return sunSignPicker
     }()
     
-    lazy var containerView: UIView = {
-        let containerView = UIView()
-        containerView.backgroundColor = .black
-        return containerView
+    lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker])
+        stackView.spacing = 20
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        return stackView
     }()
     
+    //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setSunSignPicker()
@@ -37,10 +40,9 @@ class ViewController: UIViewController {
     }
     
     private func setSunSignPicker(){
-        view.addSubviewWithAutoLayout(sunSignPicker)
-        sunSignPicker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        sunSignPicker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        sunSignPicker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        view.addSubviewWithAutoLayout(stackView)
+        let constraints = stackView.anchor(to: view, with: UIEdgeInsets(top: 15, left: 15, bottom: -15, right: -15))
+        NSLayoutConstraint.activate(constraints)
     }
 }
 
@@ -67,11 +69,10 @@ extension ViewController: UIPickerViewDelegate{
         case sunSignPicker:
             return SunSigns.allCases[row].rawValue.capitalized
         case dayPicker:
-           return SunSigns.allCases[row].rawValue.capitalized
+            return Days.allCases[row].rawValue.capitalized
         default:
             return nil
         }
-       
     }
 }
 
