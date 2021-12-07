@@ -56,7 +56,6 @@ extension FormViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView {
         case sunSignPicker:
-           // return SunSigns.allCases.count
             return formViewModel.sunSignPickerData.count
         case dayPicker:
             return formViewModel.daysPickerData.count
