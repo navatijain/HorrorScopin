@@ -24,8 +24,17 @@ class FormViewController: UIViewController {
         return sunSignPicker
     }()
     
+    lazy var button: UIButton = {
+        let button = UIButton()
+        button.setTitle("🔮", for: .normal)
+        button.layer.borderColor = UIColor.black.cgColor
+        button.layer.borderWidth = 0.7
+        button.addTarget(self, action: #selector(onButtonClick), for: .touchUpInside)
+        return button
+    }()
+    
     lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker])
+        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker, button])
         stackView.spacing = 20
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
@@ -38,13 +47,17 @@ class FormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setSunSignPicker()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemPink
     }
     
     private func setSunSignPicker(){
         view.addSubviewWithAutoLayout(stackView)
         let constraints = stackView.anchor(to: view, with: UIEdgeInsets(top: 15, left: 15, bottom: -15, right: -15))
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    @objc private func onButtonClick() {
+        formViewModel.getHoroscoope()
     }
 }
 

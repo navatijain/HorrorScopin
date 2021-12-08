@@ -136,11 +136,11 @@
 		935F4DEB27598A9800DC5869 /* HorrorScopin */ = {
 			isa = PBXGroup;
 			children = (
+				93C68E7E27606D6900BCE65E /* View */,
+				93C68E7D27606D5800BCE65E /* ViewModel */,
 				93AFD0E8275ADBFD00042E25 /* Model */,
 				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
 				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
-				935F4DF027598A9800DC5869 /* FormViewController.swift */,
-				93AFD0E2275AC81A00042E25 /* FormViewModel.swift */,
 				93AFD0E6275ADBBC00042E25 /* Network */,
 				93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */,
 				935F4DF527598A9A00DC5869 /* Assets.xcassets */,
@@ -183,6 +183,22 @@
 				93AFD0E9275ADC1400042E25 /* Horoscope.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93C68E7D27606D5800BCE65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93AFD0E2275AC81A00042E25 /* FormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93C68E7E27606D6900BCE65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				935F4DF027598A9800DC5869 /* FormViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9AE66A4C6DCDAFF39B90C1A4 /* Pods */ = {
