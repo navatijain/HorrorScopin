@@ -22,6 +22,7 @@
 		93AFD0E3275AC81A00042E25 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E2275AC81A00042E25 /* FormViewModel.swift */; };
 		93AFD0E5275ADB3100042E25 /* HoroscopeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E4275ADB3100042E25 /* HoroscopeService.swift */; };
 		93AFD0EA275ADC1400042E25 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E9275ADC1400042E25 /* Horoscope.swift */; };
+		93C68E8127607A6800BCE65E /* UIPickerView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C68E8027607A6800BCE65E /* UIPickerView+Extension.swift */; };
 		DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */; };
 		EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		93AFD0E2275AC81A00042E25 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		93AFD0E4275ADB3100042E25 /* HoroscopeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeService.swift; sourceTree = "<group>"; };
 		93AFD0E9275ADC1400042E25 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		93C68E8027607A6800BCE65E /* UIPickerView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Extension.swift"; sourceTree = "<group>"; };
 		9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin_HorrorScopinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,13 +138,13 @@
 		935F4DEB27598A9800DC5869 /* HorrorScopin */ = {
 			isa = PBXGroup;
 			children = (
+				93C68E7F27607A5200BCE65E /* Extension */,
 				93C68E7E27606D6900BCE65E /* View */,
 				93C68E7D27606D5800BCE65E /* ViewModel */,
 				93AFD0E8275ADBFD00042E25 /* Model */,
 				935F4DEC27598A9800DC5869 /* AppDelegate.swift */,
 				935F4DEE27598A9800DC5869 /* SceneDelegate.swift */,
 				93AFD0E6275ADBBC00042E25 /* Network */,
-				93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */,
 				935F4DF527598A9A00DC5869 /* Assets.xcassets */,
 				935F4DF727598A9A00DC5869 /* LaunchScreen.storyboard */,
 				935F4DFA27598A9A00DC5869 /* Info.plist */,
@@ -199,6 +201,15 @@
 				935F4DF027598A9800DC5869 /* FormViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		93C68E7F27607A5200BCE65E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */,
+				93C68E8027607A6800BCE65E /* UIPickerView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9AE66A4C6DCDAFF39B90C1A4 /* Pods */ = {
@@ -456,6 +467,7 @@
 				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
 				93AFD0E1275ABF4800042E25 /* Days.swift in Sources */,
 				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
+				93C68E8127607A6800BCE65E /* UIPickerView+Extension.swift in Sources */,
 				93AFD0E5275ADB3100042E25 /* HoroscopeService.swift in Sources */,
 				93AFD0E3275AC81A00042E25 /* FormViewModel.swift in Sources */,
 				93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */,

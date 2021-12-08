@@ -57,7 +57,9 @@ class FormViewController: UIViewController {
     }
     
     @objc private func onButtonClick() {
-        formViewModel.getHoroscoope()
+        let selectedSunSign = formViewModel.sunSignPickerData[sunSignPicker.selectedRowIndex]
+        let selectedDay = formViewModel.daysPickerData[dayPicker.selectedRowIndex]
+        formViewModel.getHoroscoope(for: selectedSunSign, day: selectedDay)
     }
 }
 

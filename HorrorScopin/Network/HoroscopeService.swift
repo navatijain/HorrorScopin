@@ -15,11 +15,13 @@ enum CustomError: String, Error {
 
 class HoroscopeService {
     private struct Constants {
-        static let baseURL = "https://aztro.sameerkumar.website/?sign=aries&day=yesterday"
+        static let baseURL = "https://aztro.sameerkumar.website"
+        static let sign = "/?sign="
+        static let day = "&day="
     }
     
-    static func getHoroscope(handler: @escaping (Result<Horoscope,Error>) -> () ) {
-        guard let url = URL(string: Constants.baseURL) else {
+    static func getHoroscope(for sign: String = "aries", day: String = "yesterday", handler: @escaping (Result<Horoscope,Error>) -> () ) {
+        guard let url = URL(string: "\(Constants.baseURL)\(Constants.sign)\(sign)\(Constants.day)\(day)") else {
             handler(.failure(CustomError.Input))
             return
         }

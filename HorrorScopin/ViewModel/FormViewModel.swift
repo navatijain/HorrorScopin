@@ -21,8 +21,8 @@ class FormViewModel {
         Days.allCases
     }
     
-    func getHoroscoope(){
-        HoroscopeService.getHoroscope { result in
+    func getHoroscoope(for sunSign: SunSigns, day: Days){
+        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let horoscoope):
