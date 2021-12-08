@@ -24,6 +24,7 @@
 		93AFD0EA275ADC1400042E25 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E9275ADC1400042E25 /* Horoscope.swift */; };
 		93C68E8127607A6800BCE65E /* UIPickerView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C68E8027607A6800BCE65E /* UIPickerView+Extension.swift */; };
 		93C68E8327607F3800BCE65E /* PredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C68E8227607F3800BCE65E /* PredictionViewController.swift */; };
+		93C68E852760C5E800BCE65E /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C68E842760C5E800BCE65E /* PredictionViewModel.swift */; };
 		DF38517C0A0A7A7897387837 /* Pods_HorrorScopinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */; };
 		EF3BB25DF9B281A752D0CF27 /* Pods_HorrorScopin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1FC6CD08B0162785A1772E /* Pods_HorrorScopin.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		93AFD0E9275ADC1400042E25 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 		93C68E8027607A6800BCE65E /* UIPickerView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Extension.swift"; sourceTree = "<group>"; };
 		93C68E8227607F3800BCE65E /* PredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewController.swift; sourceTree = "<group>"; };
+		93C68E842760C5E800BCE65E /* PredictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
 		9AC0D290EBC063A71B4C8918 /* Pods_HorrorScopinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A1993328A9C9C9B2D48E2 /* Pods-HorrorScopin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorrorScopin.debug.xcconfig"; path = "Target Support Files/Pods-HorrorScopin/Pods-HorrorScopin.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A6B07C7B849E76890A435 /* Pods_HorrorScopin_HorrorScopinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorrorScopin_HorrorScopinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				93AFD0E2275AC81A00042E25 /* FormViewModel.swift */,
+				93C68E842760C5E800BCE65E /* PredictionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				935F4DF127598A9800DC5869 /* FormViewController.swift in Sources */,
+				93C68E852760C5E800BCE65E /* PredictionViewModel.swift in Sources */,
 				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
 				93AFD0E1275ABF4800042E25 /* Days.swift in Sources */,
 				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
