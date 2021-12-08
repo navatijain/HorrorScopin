@@ -46,11 +46,27 @@ class FormViewController: UIViewController {
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        setSunSignPicker()
         view.backgroundColor = .systemPink
+        setup()
+        setupHandler()
     }
     
-    private func setSunSignPicker(){
+    private func setupHandler() {
+        formViewModel.stateChangeHandler = { [weak self] state in
+            switch state {
+            case .unselected:
+                print("unselected")
+            case .failPrediction:
+                print("fail")
+            case .fetchingPrediction:
+                print("spinner")
+            case .displayPrediction:
+                self?.present(PredictionViewController(), animated: true)
+            }
+        }
+    }
+    
+    private func setup(){
         view.addSubviewWithAutoLayout(stackView)
         let constraints = stackView.anchor(to: view, with: UIEdgeInsets(top: 15, left: 15, bottom: -15, right: -15))
         NSLayoutConstraint.activate(constraints)
@@ -92,4 +108,3 @@ extension FormViewController: UIPickerViewDelegate{
         }
     }
 }
-
