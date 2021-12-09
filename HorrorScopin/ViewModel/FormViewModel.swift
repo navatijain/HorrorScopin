@@ -13,7 +13,7 @@ enum PickerType {
 }
 
 enum State {
-    case unselected, failPrediction, fetchingPrediction, displayPrediction
+    case unselected, fail, fetching, success(Horoscope)
 }
 
 class FormViewModel {
@@ -33,16 +33,16 @@ class FormViewModel {
     var stateChangeHandler: ((State) -> ())?
   
     func getHoroscoope(for sunSign: SunSigns, day: Days){
-        state = .fetchingPrediction
+        state = .fetching
         HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let horoscoope):
                     print(horoscoope)
-                    self.state = .displayPrediction
+                    self.state = .success(horoscoope)
                 case .failure(let error):
                     print(error)
-                    self.state = .failPrediction
+                    self.state = .fail
                 }
             }
         }

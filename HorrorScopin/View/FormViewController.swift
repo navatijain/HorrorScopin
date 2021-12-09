@@ -9,6 +9,8 @@ import UIKit
 
 class FormViewController: UIViewController {
     
+    let formViewModel = FormViewModel()
+    
     //MARK: UI
     lazy var sunSignPicker: UIPickerView = {
         let sunSignPicker = UIPickerView()
@@ -41,8 +43,6 @@ class FormViewController: UIViewController {
         return stackView
     }()
     
-    let formViewModel = FormViewModel()
-    
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,12 +56,13 @@ class FormViewController: UIViewController {
             switch state {
             case .unselected:
                 print("unselected")
-            case .failPrediction:
+            case  .fail:
                 print("fail")
-            case .fetchingPrediction:
+            case .fetching:
                 print("spinner")
-            case .displayPrediction:
-                self?.present(PredictionViewController(), animated: true)
+            case .success(let horoscope):
+                let viewModel = PredictionViewModel(horoscope: horoscope)
+                self?.present(PredictionViewController(viewModel: viewModel), animated: true)
             }
         }
     }

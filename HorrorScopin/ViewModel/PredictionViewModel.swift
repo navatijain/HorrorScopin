@@ -8,6 +8,11 @@
 import Foundation
 
 class PredictionViewModel {
+    public var horoscope: Horoscope
+    
+    init(horoscope: Horoscope) {
+        self.horoscope = horoscope
+    }
     
     
 }
