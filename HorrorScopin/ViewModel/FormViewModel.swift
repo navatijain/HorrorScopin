@@ -32,7 +32,7 @@ class FormViewModel {
     }
     var stateChangeHandler: ((State) -> ())?
   
-    func getHoroscoope(for sunSign: SunSigns, day: Days){
+    func getHoroscoope(for sunSign: SunSigns, day: Days) {
         state = .fetching
         HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) { result in
             DispatchQueue.main.async {

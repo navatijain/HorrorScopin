@@ -36,8 +36,33 @@ class FormViewController: UIViewController {
     }()
     
     lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker, button])
+        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker, button, resultStackView])
         stackView.spacing = 20
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        return stackView
+    }()
+    
+    //MARK: Result Components
+   lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Description:"
+        return label
+    }()
+    
+    lazy var descriptionLabelContents = UILabel()
+    
+    lazy var compatibilityLabel: UILabel = {
+         let label = UILabel()
+         label.text = "Compatibility:"
+         return label
+     }()
+     
+    lazy var compatibilityContents = UILabel()
+    
+    lazy var resultStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [descriptionLabel,descriptionLabelContents,compatibilityLabel,compatibilityContents])
+        stackView.spacing = 10
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
         return stackView
@@ -49,6 +74,7 @@ class FormViewController: UIViewController {
         view.backgroundColor = .systemPink
         setup()
         setupHandler()
+        
     }
     
     private func setupHandler() {
