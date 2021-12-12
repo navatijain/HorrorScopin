@@ -23,7 +23,6 @@ class FormViewModel {
     
     var horoscopeObserver = PublishSubject<Horoscope>()
     var loadingObserver = BehaviorSubject<Bool>(value: false)
-    
     let disposeBag = DisposeBag()
   
     func getHoroscoope(for sunSign: SunSigns, day: Days) {
@@ -37,7 +36,6 @@ class FormViewModel {
                 case .failure(let error):
                     self?.loadingObserver.onNext(false)
                     self?.horoscopeObserver.onError(error)
-                  
                 }
             }
         }

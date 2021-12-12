@@ -45,7 +45,7 @@ class FormViewController: UIViewController {
     }()
     
     //MARK: Result Components
-   lazy var descriptionLabel: UILabel = {
+    lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Description:"
         return label
@@ -54,11 +54,11 @@ class FormViewController: UIViewController {
     lazy var descriptionLabelContents = UILabel()
     
     lazy var compatibilityLabel: UILabel = {
-         let label = UILabel()
-         label.text = "Compatibility:"
-         return label
-     }()
-     
+        let label = UILabel()
+        label.text = "Compatibility:"
+        return label
+    }()
+    
     lazy var compatibilityContents = UILabel()
     
     lazy var predictionStackView: UIStackView = {
@@ -74,24 +74,8 @@ class FormViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         setup()
-       // setupHandler()
         setObservers()
     }
-    
-//    private func setupHandler() {
-//        formViewModel.stateChangeHandler = { [weak self] state in
-//            switch state {
-//            case .unselected:
-//                print("unselected")
-//            case  .fail:
-//                print("fail")
-//            case .fetching:
-//                print("spinner")
-//            case .success(let horoscope):
-//                print("success")
-//            }
-//        }
-//    }
     
     private func setup(){
         view.addSubviewWithAutoLayout(stackView)
