@@ -44,7 +44,7 @@ class FormViewController: UIViewController {
         return stackView
     }()
     
-    //MARK: Result Components
+    //MARK: Prediction Result Components
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Description:"
@@ -105,8 +105,8 @@ class FormViewController: UIViewController {
     }
 }
 
+//MARK: Observers
 extension FormViewController {
-    
     private func setObservers(){
         setHoroscopeObserver()
         setLoadingObserver()
@@ -120,8 +120,7 @@ extension FormViewController {
         }, onError: { [weak self] error in
             self?.hidePrediction()
             self?.presentAlert(for: error)
-        }
-        ).disposed(by: formViewModel.disposeBag)
+        }).disposed(by: formViewModel.disposeBag)
     }
     
     private func setLoadingObserver() {
@@ -131,6 +130,7 @@ extension FormViewController {
     }
 }
 
+//MARK: UIPicker
 extension FormViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
