@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class FormViewController: UIViewController {
     
@@ -36,7 +37,7 @@ class FormViewController: UIViewController {
     }()
     
     lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker, button, resultStackView])
+        let stackView = UIStackView(arrangedSubviews: [sunSignPicker,dayPicker, button, predictionStackView])
         stackView.spacing = 20
         stackView.axis = .vertical
         stackView.distribution = .fillProportionally
@@ -60,7 +61,7 @@ class FormViewController: UIViewController {
      
     lazy var compatibilityContents = UILabel()
     
-    lazy var resultStackView: UIStackView = {
+    lazy var predictionStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [descriptionLabel,descriptionLabelContents,compatibilityLabel,compatibilityContents])
         stackView.spacing = 10
         stackView.axis = .vertical
@@ -73,25 +74,37 @@ class FormViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         setup()
-        setupHandler()
-        
+       // setupHandler()
+        setObservers()
     }
     
-    private func setupHandler() {
-        formViewModel.stateChangeHandler = { [weak self] state in
-            switch state {
-            case .unselected:
-                print("unselected")
-            case  .fail:
-                print("fail")
-            case .fetching:
-                print("spinner")
-            case .success(let horoscope):
-                let viewModel = PredictionViewModel(horoscope: horoscope)
-                self?.present(PredictionViewController(viewModel: viewModel), animated: true)
-            }
+//    private func setupHandler() {
+//        formViewModel.stateChangeHandler = { [weak self] state in
+//            switch state {
+//            case .unselected:
+//                print("unselected")
+//            case  .fail:
+//                print("fail")
+//            case .fetching:
+//                print("spinner")
+//            case .success(let horoscope):
+//                print("success")
+//            }
+//        }
+//    }
+    
+    private func setObservers(){
+        formViewModel.horoscopeObserver.subscribe(onNext: { [weak self] horoscope in
+            self?.showPrediction()
+            self?.descriptionLabelContents.text = horoscope.description
+            self?.compatibilityContents.text = horoscope.compatibility
+        }, onError: { [weak self] error in
+            self?.hidePrediction()
+            self?.presentAlert(for: error)
         }
+        ).disposed(by: formViewModel.disposeBag)
     }
+    
     
     private func setup(){
         view.addSubviewWithAutoLayout(stackView)
@@ -103,6 +116,21 @@ class FormViewController: UIViewController {
         let selectedSunSign = formViewModel.sunSignPickerData[sunSignPicker.selectedRowIndex]
         let selectedDay = formViewModel.daysPickerData[dayPicker.selectedRowIndex]
         formViewModel.getHoroscoope(for: selectedSunSign, day: selectedDay)
+    }
+    
+    private func hidePrediction() {
+        predictionStackView.isHidden = true
+    }
+    
+    private func showPrediction() {
+        predictionStackView.isHidden = false
+    }
+    
+    private func presentAlert(for error: Error) {
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancel)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 

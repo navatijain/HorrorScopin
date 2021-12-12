@@ -5,7 +5,7 @@
 //  Created by Navati Jain on 2021-12-03.
 //
 
-import Foundation
+import RxSwift
 import UIKit
 
 enum PickerType {
@@ -25,24 +25,18 @@ class FormViewModel {
         Days.allCases
     }
     
-    private var state: State = .unselected {
-        didSet {
-            stateChangeHandler?(state)
-        }
-    }
-    var stateChangeHandler: ((State) -> ())?
+    var horoscopeObserver = PublishSubject<Horoscope>()
+    let disposeBag = DisposeBag()
   
     func getHoroscoope(for sunSign: SunSigns, day: Days) {
-        state = .fetching
+      //  state = .fetching
         HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let horoscoope):
-                    print(horoscoope)
-                    self.state = .success(horoscoope)
+                    self.horoscopeObserver.onNext(horoscoope)
                 case .failure(let error):
-                    print(error)
-                    self.state = .fail
+                    self.horoscopeObserver.onError(error)
                 }
             }
         }
