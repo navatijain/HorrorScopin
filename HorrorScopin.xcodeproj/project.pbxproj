@@ -17,6 +17,7 @@
 		935F4E0E27598A9A00DC5869 /* HorrorScopinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */; };
 		935F4E1027598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */; };
 		935F4E1D2759A16500DC5869 /* SunSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4E1C2759A16500DC5869 /* SunSigns.swift */; };
+		9382D1EC276647B4004D1502 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382D1EB276647B4004D1502 /* Spinner.swift */; };
 		93AFD0DF275ABB2F00042E25 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */; };
 		93AFD0E1275ABF4800042E25 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E0275ABF4800042E25 /* Days.swift */; };
 		93AFD0E3275AC81A00042E25 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFD0E2275AC81A00042E25 /* FormViewModel.swift */; };
@@ -64,6 +65,7 @@
 		935F4E0D27598A9A00DC5869 /* HorrorScopinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITests.swift; sourceTree = "<group>"; };
 		935F4E0F27598A9A00DC5869 /* HorrorScopinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorScopinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		935F4E1C2759A16500DC5869 /* SunSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunSigns.swift; sourceTree = "<group>"; };
+		9382D1EB276647B4004D1502 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		93AFD0DE275ABB2F00042E25 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		93AFD0E0275ABF4800042E25 /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		93AFD0E2275AC81A00042E25 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
@@ -173,6 +175,14 @@
 			path = HorrorScopinUITests;
 			sourceTree = "<group>";
 		};
+		9382D1EA276647A7004D1502 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9382D1EB276647B4004D1502 /* Spinner.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		93AFD0E6275ADBBC00042E25 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		93C68E7E27606D6900BCE65E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9382D1EA276647A7004D1502 /* CustomViews */,
 				935F4DF027598A9800DC5869 /* FormViewController.swift */,
 				93C68E8227607F3800BCE65E /* PredictionViewController.swift */,
 			);
@@ -473,6 +484,7 @@
 				93C68E852760C5E800BCE65E /* PredictionViewModel.swift in Sources */,
 				935F4DED27598A9800DC5869 /* AppDelegate.swift in Sources */,
 				93AFD0E1275ABF4800042E25 /* Days.swift in Sources */,
+				9382D1EC276647B4004D1502 /* Spinner.swift in Sources */,
 				935F4DEF27598A9800DC5869 /* SceneDelegate.swift in Sources */,
 				93C68E8127607A6800BCE65E /* UIPickerView+Extension.swift in Sources */,
 				93C68E8327607F3800BCE65E /* PredictionViewController.swift in Sources */,

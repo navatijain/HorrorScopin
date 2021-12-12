@@ -93,19 +93,6 @@ class FormViewController: UIViewController {
 //        }
 //    }
     
-    private func setObservers(){
-        formViewModel.horoscopeObserver.subscribe(onNext: { [weak self] horoscope in
-            self?.showPrediction()
-            self?.descriptionLabelContents.text = horoscope.description
-            self?.compatibilityContents.text = horoscope.compatibility
-        }, onError: { [weak self] error in
-            self?.hidePrediction()
-            self?.presentAlert(for: error)
-        }
-        ).disposed(by: formViewModel.disposeBag)
-    }
-    
-    
     private func setup(){
         view.addSubviewWithAutoLayout(stackView)
         let constraints = stackView.anchor(to: view, with: UIEdgeInsets(top: 15, left: 15, bottom: -15, right: -15))
@@ -131,6 +118,32 @@ class FormViewController: UIViewController {
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cancel)
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension FormViewController {
+    
+    private func setObservers(){
+        setHoroscopeObserver()
+        setLoadingObserver()
+    }
+    
+    private func setHoroscopeObserver(){
+        formViewModel.horoscopeObserver.subscribe(onNext: { [weak self] horoscope in
+            self?.showPrediction()
+            self?.descriptionLabelContents.text = horoscope.description
+            self?.compatibilityContents.text = horoscope.compatibility
+        }, onError: { [weak self] error in
+            self?.hidePrediction()
+            self?.presentAlert(for: error)
+        }
+        ).disposed(by: formViewModel.disposeBag)
+    }
+    
+    private func setLoadingObserver() {
+        formViewModel.loadingObserver.subscribe (onNext: { isLoading in
+            isLoading ? Spinner.show(on: self.view) : Spinner.hide(from: self.view)
+        }).disposed(by: formViewModel.disposeBag)
     }
 }
 

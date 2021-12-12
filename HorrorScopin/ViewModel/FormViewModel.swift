@@ -12,10 +12,6 @@ enum PickerType {
     case sunSign, days
 }
 
-enum State {
-    case unselected, fail, fetching, success(Horoscope)
-}
-
 class FormViewModel {
     var sunSignPickerData: [SunSigns] {
         SunSigns.allCases
@@ -26,17 +22,22 @@ class FormViewModel {
     }
     
     var horoscopeObserver = PublishSubject<Horoscope>()
+    var loadingObserver = BehaviorSubject<Bool>(value: false)
+    
     let disposeBag = DisposeBag()
   
     func getHoroscoope(for sunSign: SunSigns, day: Days) {
-      //  state = .fetching
-        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) { result in
+        loadingObserver.onNext(true)
+        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) {[weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let horoscoope):
-                    self.horoscopeObserver.onNext(horoscoope)
+                    self?.loadingObserver.onNext(false)
+                    self?.horoscopeObserver.onNext(horoscoope)
                 case .failure(let error):
-                    self.horoscopeObserver.onError(error)
+                    self?.loadingObserver.onNext(false)
+                    self?.horoscopeObserver.onError(error)
+                  
                 }
             }
         }
