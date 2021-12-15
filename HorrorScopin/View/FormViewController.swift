@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class FormViewController: UIViewController {
     
@@ -113,14 +114,20 @@ extension FormViewController {
     }
     
     private func setHoroscopeObserver(){
-        formViewModel.horoscopeObserver.subscribe(onNext: { [weak self] horoscope in
-            self?.showPrediction()
-            self?.descriptionLabelContents.text = horoscope.description
-            self?.compatibilityContents.text = horoscope.compatibility
-        }, onError: { [weak self] error in
-            self?.hidePrediction()
-            self?.presentAlert(for: error)
-        }).disposed(by: formViewModel.disposeBag)
+        
+        let result = formViewModel.horoscopeObserver.map { $0 }
+          //  .catchAndReturn(Horoscope())
+            .share(replay: 1)
+            .observe(on: MainScheduler.instance)
+        
+        result.map{ $0.description }
+        .bind(to: descriptionLabelContents.rx.text)
+        .disposed(by: formViewModel.disposeBag)
+        
+        result.map{ $0.compatibility }
+        .bind(to: compatibilityContents.rx.text)
+        .disposed(by: formViewModel.disposeBag)
+        
     }
     
     private func setLoadingObserver() {
