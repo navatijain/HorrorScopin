@@ -114,18 +114,15 @@ extension FormViewController {
     }
     
     private func setHoroscopeObserver(){
-        
         let result = formViewModel.horoscopeObserver.map { $0 }
-          //  .catchAndReturn(Horoscope())
-            .share(replay: 1)
-            .observe(on: MainScheduler.instance)
+            .asDriver(onErrorJustReturn: nil)
         
-        result.map{ $0.description }
-        .bind(to: descriptionLabelContents.rx.text)
+        result.map{ $0?.description ?? "" }
+        .drive(descriptionLabelContents.rx.text)
         .disposed(by: formViewModel.disposeBag)
         
-        result.map{ $0.compatibility }
-        .bind(to: compatibilityContents.rx.text)
+        result.map{ $0?.compatibility ?? "" }
+        .drive(compatibilityContents.rx.text)
         .disposed(by: formViewModel.disposeBag)
         
     }

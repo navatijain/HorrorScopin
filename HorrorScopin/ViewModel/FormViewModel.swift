@@ -21,7 +21,7 @@ class FormViewModel {
         Days.allCases
     }
     
-    var horoscopeObserver = PublishSubject<Horoscope>()
+    var horoscopeObserver = PublishSubject<Horoscope?>()
     var loadingObserver = BehaviorSubject<Bool>(value: false)
     let disposeBag = DisposeBag()
   
