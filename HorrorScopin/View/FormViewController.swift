@@ -90,14 +90,13 @@ class FormViewController: UIViewController {
         
         formViewModel.getHorosopeObservable(for: selectedSunSign, day: selectedDay)
             .map { $0?.description}
-            .bind(to: descriptionLabelContents.rx.text)
+            .drive(descriptionLabelContents.rx.text)
             .disposed(by: formViewModel.disposeBag)
         
         formViewModel.getHorosopeObservable(for: selectedSunSign, day: selectedDay)
             .map { $0?.compatibility}
-            .bind(to: compatibilityContents.rx.text)
+            .drive(compatibilityContents.rx.text)
             .disposed(by: formViewModel.disposeBag)
-         
     }
     
 //    private func hidePrediction() {

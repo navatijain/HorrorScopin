@@ -72,6 +72,6 @@ class HoroscopeService {
 //            }
 //        }.resume()
 //    }
-//    
+//
  
 }

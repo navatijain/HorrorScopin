@@ -7,6 +7,7 @@
 
 import RxSwift
 import UIKit
+import RxCocoa
 
 enum PickerType {
     case sunSign, days
@@ -41,10 +42,9 @@ class FormViewModel {
 //        }
 //    }
     
-    func getHorosopeObservable(for sunSign: SunSigns, day: Days) -> Observable<Horoscope?> {
+    func getHorosopeObservable(for sunSign: SunSigns, day: Days) -> Driver<Horoscope?> {
         HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue)
             .catchAndReturn(nil)
-            .share(replay: 1)
-            .observe(on: MainScheduler.instance)
+            .asDriver(onErrorJustReturn: nil)
     }
 }
