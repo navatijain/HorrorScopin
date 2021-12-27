@@ -25,19 +25,26 @@ class FormViewModel {
     var loadingObserver = BehaviorSubject<Bool>(value: false)
     let disposeBag = DisposeBag()
   
-    func getHoroscoope(for sunSign: SunSigns, day: Days) {
-        loadingObserver.onNext(true)
-        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) {[weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let horoscoope):
-                    self?.loadingObserver.onNext(false)
-                    self?.horoscopeObserver.onNext(horoscoope)
-                case .failure(let error):
-                    self?.loadingObserver.onNext(false)
-                    self?.horoscopeObserver.onError(error)
-                }
-            }
-        }
+//    func getHoroscoope(for sunSign: SunSigns, day: Days) {
+//        loadingObserver.onNext(true)
+//        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue) {[weak self] result in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .success(let horoscoope):
+//                    self?.loadingObserver.onNext(false)
+//                    self?.horoscopeObserver.onNext(horoscoope)
+//                case .failure(let error):
+//                    self?.loadingObserver.onNext(false)
+//                    self?.horoscopeObserver.onError(error)
+//                }
+//            }
+//        }
+//    }
+    
+    func getHorosopeObservable(for sunSign: SunSigns, day: Days) -> Observable<Horoscope?> {
+        HoroscopeService.getHoroscope(for: sunSign.rawValue, day: day.rawValue)
+            .catchAndReturn(nil)
+            .share(replay: 1)
+            .observe(on: MainScheduler.instance)
     }
 }

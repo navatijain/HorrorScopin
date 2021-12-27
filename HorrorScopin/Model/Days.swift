@@ -8,5 +8,5 @@
 import Foundation
 
 enum Days: String, CaseIterable {
-    case yesterday, today, tomorrow
+    case yesterday, today, tomorrow, test
 }

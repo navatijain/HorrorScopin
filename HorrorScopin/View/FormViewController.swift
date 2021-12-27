@@ -75,7 +75,7 @@ class FormViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         setup()
-        setObservers()
+        //setObservers()
     }
     
     private func setup(){
@@ -87,23 +87,33 @@ class FormViewController: UIViewController {
     @objc private func onButtonClick() {
         let selectedSunSign = formViewModel.sunSignPickerData[sunSignPicker.selectedRowIndex]
         let selectedDay = formViewModel.daysPickerData[dayPicker.selectedRowIndex]
-        formViewModel.getHoroscoope(for: selectedSunSign, day: selectedDay)
+        
+        formViewModel.getHorosopeObservable(for: selectedSunSign, day: selectedDay)
+            .map { $0?.description}
+            .bind(to: descriptionLabelContents.rx.text)
+            .disposed(by: formViewModel.disposeBag)
+        
+        formViewModel.getHorosopeObservable(for: selectedSunSign, day: selectedDay)
+            .map { $0?.compatibility}
+            .bind(to: compatibilityContents.rx.text)
+            .disposed(by: formViewModel.disposeBag)
+         
     }
     
-    private func hidePrediction() {
-        predictionStackView.isHidden = true
-    }
+//    private func hidePrediction() {
+//        predictionStackView.isHidden = true
+//    }
+//
+//    private func showPrediction() {
+//        predictionStackView.isHidden = false
+//    }
     
-    private func showPrediction() {
-        predictionStackView.isHidden = false
-    }
-    
-    private func presentAlert(for error: Error) {
-        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertController.addAction(cancel)
-        self.present(alertController, animated: true, completion: nil)
-    }
+//    private func presentAlert(for error: Error) {
+//        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+//        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//        alertController.addAction(cancel)
+//        self.present(alertController, animated: true, completion: nil)
+//    }
 }
 
 //MARK: Observers
