@@ -20,7 +20,10 @@ class HoroscopeService {
         static let day = "&day="
     }
     
-    static func getHoroscope(for sign: String = "aries", day: String = "yesterday", handler: @escaping (Result<Horoscope,Error>) -> () ) {
+    static func getHoroscope(for sign: String = "aries",
+                             day: String = "yesterday",
+                             handler: @escaping (Result<Horoscope,Error>) -> () ) {
+        
         guard let url = URL(string: "\(Constants.baseURL)\(Constants.sign)\(sign)\(Constants.day)\(day)") else {
             handler(.failure(CustomError.Input))
             return
@@ -35,10 +38,10 @@ class HoroscopeService {
                 return
             }
             if httpResponse.statusCode == 200 {
-                let jsoonDecoder = JSONDecoder()
-                jsoonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
                 if let data = data,
-                   let locationDetails = try? jsoonDecoder.decode(Horoscope.self, from: data)  {
+                   let locationDetails = try? jsonDecoder.decode(Horoscope.self, from: data)  {
                     print(locationDetails)
                     handler(.success(locationDetails))
                 } else {
